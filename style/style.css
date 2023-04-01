@@ -1,0 +1,406 @@
+@font-face {
+    font-family: JuneBug;
+    src: url('fonts/Gandom.ttf');
+}
+
+html,
+body {
+    height: 100%;
+    min-width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "JuneBug";
+}
+
+.container {
+    width: 100%;
+    height: auto;
+}
+
+#header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-bottom: 15px;
+}
+
+.main_p {
+    margin: 0 0 0 25%;
+    padding: 20px 0 0 0;
+    font-size: 21px;
+    width: 50%;
+}
+
+.sub_p {
+    font-size: 14px;
+    margin: 0;
+    padding: 10px 0 0 0;
+    text-align: center;
+}
+
+.sub_p a {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 500px) {
+    .main_p {
+        font-size: 18px;
+        width: 88%;
+        margin: 0 0 0 6%;
+    }
+    .sub_p {
+        font-size: 12px;
+    }
+}
+
+.table_main {
+    width: 100%;
+    height: max-content;
+    float: left;
+    display: flex;
+    justify-content: space-evenly;
+    flex-flow: row-reverse wrap;
+}
+
+#void {
+    width: 100%;
+    float: left;
+}
+
+.table_container {
+    width: max-content;
+    height: max-content;
+    margin: 0 0 50px 0;
+}
+
+.link_div{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.link_div_half{
+    text-align: center;
+    width: 50%;
+    height: 100%;
+    float: right;
+    padding: 0;
+}
+
+table {
+    text-align: center;
+    direction: rtl;
+    width: 100%;
+    float: left;
+    border-collapse: collapse;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+td {
+    padding: 5px 0 5px 0;
+    width: 64px;
+}
+
+th {
+    padding: 5px 0 5px 0;
+    width: 64px;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+}
+
+.class_note {
+    width: 100%;
+    float: left;
+    height: auto;
+    text-align: center;
+}
+
+.classs {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+th span {
+    font-size: 10px;
+}
+
+
+/*-----------------------------------*/
+
+.mode {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    float: left;
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+#sub_sub {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: right;
+}
+
+#sub_mode {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 40px 0 0;
+    padding: 2px 5px 2px 5px;
+    font-size: 10px;
+}
+
+@media screen and (max-width:550px) {
+    #sub_mode {
+        margin: 0 20px 0 0;
+    }
+}
+
+#sub_mode p {
+    margin: 0;
+    padding: 0;
+}
+
+.footer {
+    width: 100%;
+    float: left;
+    height: max-content;
+    min-height: 50px;
+    padding: 20px 0 20px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.sub_footer {
+    width: 100%;
+    max-width: 375px;
+    height: 100%;
+}
+
+.sub_footer div {
+    width: 100%;
+    height: 50%;
+    float: left;
+}
+
+.sub_footer div div {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+
+.sub_footer div div p,
+.sub_footer div div a {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+}
+
+
+/*-------------------*/
+
+#comments {
+    background-color: rgba(209, 213, 218, 0.842);
+    border: 1px solid black;
+    width: 90%;
+    margin: 20px 0 20px 5%;
+    padding: 0;
+    float: left;
+}
+
+#comment_header {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 20px 0;
+}
+
+#comment_header p {
+    width: fit-content;
+    padding: 0;
+    margin: 0 auto;
+}
+
+#submit_comment {
+    width: fit-content;
+    height: auto;
+    margin: 0 0 20px 0;
+    padding: 0;
+    float: right;
+    direction: rtl;
+}
+
+form {
+    margin-right: 20px;
+    display: flex;
+    justify-content: right;
+    flex-flow: column wrap;
+}
+
+input {
+    font-family: "JuneBug";
+    direction: rtl;
+    width: 150px;
+    height: 20px;
+    margin: 0 0 5px 0;
+    padding: 5px 10px 5px 0;
+}
+
+select {
+    font-family: "JuneBug";
+    direction: rtl;
+    width: 150px;
+    height: 30px;
+    margin: 0 0 5px 0;
+}
+
+textarea {
+    font-family: "JuneBug";
+    width: 250px;
+    height: 80px;
+    margin: 0 0 5px 0;
+    direction: rtl;
+    resize: none;
+}
+
+button {
+    width: 120px;
+    height: 35px;
+    font-family: "JuneBug";
+}
+
+#show_comment {
+    width: fit-content;
+    height: auto;
+    margin: 0 0 20px 0;
+    padding: 0;
+    float: right;
+    direction: rtl;
+}
+
+#pp {
+    font-size: 20px;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+#temp_2 {
+    width: fit-content;
+    float: right;
+    margin: 12px 10px 0 0;
+}
+
+#temp_3 {
+    min-width: 300px;
+    max-width: 90%;
+    float: right;
+    margin: 0 10px 0 0;
+}
+
+#show_comment span {
+    font-size: 14px;
+    margin: 0 20px 0 0;
+    padding: 0;
+}
+
+@media screen and (max-width: 620px) {
+    #temp_2 {
+        margin: 12px 10px 0 0;
+    }
+    #temp_3 {
+        margin: 0 10px 0 0;
+    }
+}
+
+#com_main {
+    border-radius: 4px;
+    background-color: aliceblue;
+    border: 1px solid black;
+    width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 200px;
+    max-width: 1000px;
+}
+
+.com_sub {
+    width: 100%;
+    height: auto;
+}
+
+.com_sub p {
+    margin: 0;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 400px) {
+    #temp_3 {
+        min-width: 200px;
+    }
+    textarea {
+        width: 200px;
+    }
+}
+
+.emtehan {
+    width: 100%;
+    float: left;
+    height: auto;
+}
+
+#em_link,
+#em_bar,
+#em_img {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+#bar {
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+#em_bar p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+#em_img p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#img_box {
+    width: 100%;
+    max-width: 600px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
